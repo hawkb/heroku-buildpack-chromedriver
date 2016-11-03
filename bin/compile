@@ -59,8 +59,6 @@ unzip $BUILD_DIR/vendor/chromedriver/chromedriver.zip -d $BUILD_DIR/vendor/chrom
 rm $BUILD_DIR/vendor/chromedriver/chromedriver.zip
 ls -lah $BUILD_DIR/vendor/chromedriver
 
-chmod a+x $BUILD_DIR/vendor/chromedriver/chromedriver
-
 topic "Writing profile script"
 mkdir -p $BUILD_DIR/.profile.d
 cat <<EOF >$BUILD_DIR/.profile.d/chromedriver.sh
